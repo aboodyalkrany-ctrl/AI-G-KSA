@@ -91,10 +91,12 @@ interface DeveloperStats {
 
 // ============== CONSTANTS ==============
 const DEVELOPER_CREDENTIALS = {
-  username: 'AFTH966',
-  password: '67657617',
-  name: 'عبدالله المضيان',
-  title: 'Elite Developer'
+  snapchat: "AFTH966",
+  Support: "+965 67657617",
+  name: "نايف رمزي ال لادهم",
+  title: "Elite Developer",
+  username: "admin",      // أضف هذا السطر
+  password: "123"        // أضف هذا السطر
 };
 
 const SUBSCRIPTION_PLANS = [
