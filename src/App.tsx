@@ -49,6 +49,13 @@ import { toast } from 'sonner';
 import './App.css';
 
 // ============== TYPES ==============
+interface UserProfile {
+  snapchat: string;
+  Support: string;
+  name: string;
+  title: string;
+}
+
 interface FeatureState {
   enabled: boolean;
   intensity: number;
@@ -84,8 +91,8 @@ interface DeveloperStats {
 
 // ============== CONSTANTS ==============
 const DEVELOPER_CREDENTIALS = {
-  snapchat : 'AFTH966',
-  Support : '+965 67657617',
+  username: 'AFTH966',
+  password: '67657617',
   name: 'عبدالله المضيان',
   title: 'Elite Developer'
 };
@@ -119,14 +126,8 @@ const SUBSCRIPTION_PLANS = [
 
 const BANK_ACCOUNTS = [
   {
-    bank: 'البنك الأهلي السعودي',
-    accountName: 'عبدالله المضيان',
-    accountNumber: 'SA0380000000608010167519',
-    iban: 'SA03 8000 0000 6080 1016 7519'
-  },
-  {
     bank: 'بنك الراجحي',
-    accountName: 'عبدالله المضيان',
+    accountName: 'عبدالله العنزي',
     accountNumber: 'SA6680000026608010167519',
     iban: 'SA66 8000 0026 6080 1016 7519'
   }
