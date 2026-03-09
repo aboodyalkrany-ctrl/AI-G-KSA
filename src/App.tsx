@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+import './i18n';
 import { useState, useEffect, useRef } from 'react';
 import { 
   Power, 
@@ -82,8 +84,8 @@ interface DeveloperStats {
 
 // ============== CONSTANTS ==============
 const DEVELOPER_CREDENTIALS = {
-  username: 'AFTH966',
-  password: 'Kw67657617&',
+  snapchat : 'AFTH966',
+  Support : '+965 67657617',
   name: 'عبدالله المضيان',
   title: 'Elite Developer'
 };
@@ -132,6 +134,7 @@ const BANK_ACCOUNTS = [
 
 // ============== MAIN APP ==============
 function App() {
+const { t } = useTranslation();
   // ========== AUTH STATE ==========
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isDeveloper, setIsDeveloper] = useState(false);
@@ -551,7 +554,7 @@ function App() {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-gray-400 text-sm">Total Users</p>
+                      <p className="text-gray-400 text-sm">{t('total_users')}</p>
                       <p className="text-3xl font-bold text-white">{devStats.totalUsers.toLocaleString()}</p>
                     </div>
                     <Users className="w-10 h-10 text-cyan-400" />
